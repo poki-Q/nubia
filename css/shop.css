@@ -1,0 +1,123 @@
+/* 广告区域 */
+.banner{
+	width: 100%;
+	height: 520px;
+	background-color: gray;
+	overflow: hidden;
+}
+.banner-scroll{
+	position: relative;
+	left: 50%;
+	height: 100%;
+}
+/* 轮播图 */
+.list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.list > li{
+	float: left;
+	height: 100%;
+}
+.list > li > img{
+	height: 100%;
+}
+
+/* 左边菜单栏 */
+.left_menu{
+	position: absolute;
+	left: 400px;
+	top: 0;
+	width: 600px;
+	height: 100%;
+}
+.menu-list{
+	position: relative;
+	width: 200px;
+	height: 100%;
+	background-color: rgb(230,230,230);
+}
+.menu-list > li{
+	width: 100%;
+	height: 50px;
+}
+.menu-list > li > a{
+	display: inline-block;  /* a行内元素 */
+	width: 100%;
+	height: 100%;
+	line-height: 52px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	color: black;
+}
+.menu-list > li > a:hover{
+	color: orangered;
+}
+
+.items-list{
+	position: absolute;
+	left: 200px;
+	top: 0;
+	width: 400px;
+	height: 520px;
+	background-color: #fff;
+	z-index: 999;
+}
+.items-list .item{
+	display: block;
+	float: left;
+	width: 180px;
+	height: 50px;
+	margin-top: 10px;
+}
+.items-list .item > img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;	
+	float: left;
+}
+.items-list .item > span{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	color: black;
+	font-size: 13px;
+}
+.items-list .item > span:hover{
+	color:orangered;	
+	transition: color 0.6s;
+}
+
+
+
+/* 轮播图标识 */
+.indicator-dots{
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -100px;
+	height: 20px;
+	width: 200px;
+}
+.dots-list{
+	width: 100%;
+	height: 100%;
+}
+.dots-list > li{
+	float: left;
+	margin-left: 10px;
+	width: 20px;
+	height: 100%;
+	background-color: white;
+	line-height: 20px;
+	border-radius: 10px;
+	text-align: center;
+	color: black;
+}
+.dots-list > li:nth-child(1){
+	background-color: orangered;
+}
+
